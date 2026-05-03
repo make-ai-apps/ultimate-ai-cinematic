@@ -1,10 +1,17 @@
-export const CREATORS = [
-  { name: 'Donna D\u2019Errico', tag: 'Pods', note: 'Live host' },
-  { name: 'Hawk Tuah AI', tag: 'Pods', note: '400M+ views' },
-  { name: 'Tracy Brighman', tag: 'Faith', note: 'Pray With You' },
-  { name: 'Untitled Creator', tag: 'Books', note: 'Coming' },
-  { name: 'Untitled Creator', tag: 'Pods', note: 'Coming' },
-  { name: 'Untitled Creator', tag: 'Books', note: 'Coming' }
+export type Creator = {
+  name: string;
+  tag: string;
+  note: string;
+  image: string;
+};
+
+export const CREATORS: Creator[] = [
+  { name: 'Donna D\u2019Errico', tag: 'Pods', note: 'Live host', image: '/generated/creator-orb-pink.png' },
+  { name: 'Hawk Tuah AI', tag: 'Pods', note: '400M+ views', image: '/generated/creator-orb-magenta.jpg' },
+  { name: 'Tracy Brighman', tag: 'Faith', note: 'Pray With You', image: '/generated/creator-orb-white.jpg' },
+  { name: 'Untitled Creator', tag: 'Books', note: 'Coming', image: '/generated/creator-orb-gold.jpg' },
+  { name: 'Untitled Creator', tag: 'Pods', note: 'Coming', image: '/generated/creator-orb-blue.jpg' },
+  { name: 'Untitled Creator', tag: 'Books', note: 'Coming', image: '/generated/creator-orb-cyan.jpg' }
 ];
 
 export const PRESS = ['Fox News', 'Hollywood Reporter', 'TechCrunch', 'People', 'Podnews'];

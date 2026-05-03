@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/data.ts","./src/main.tsx","./src/scene/connectionlines.tsx","./src/scene/galaxy.tsx","./src/scene/glyphs.tsx","./src/scene/orbs.tsx","./src/scene/scene.tsx","./src/scene/usescrollprogress.ts"],"version":"5.9.3"}
+{"root":["./src/app.tsx","./src/data.ts","./src/main.tsx","./src/scene/connectionlines.tsx","./src/scene/galaxy.tsx","./src/scene/glyphs.tsx","./src/scene/imageplates.tsx","./src/scene/orbs.tsx","./src/scene/scene.tsx","./src/scene/usescrollprogress.ts"],"version":"5.9.3"}
