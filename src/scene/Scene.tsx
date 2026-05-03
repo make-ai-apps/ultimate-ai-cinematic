@@ -71,9 +71,11 @@ export default function Scene() {
         <Glyphs />
 
         <EffectComposer multisampling={0}>
-          <Bloom intensity={0.9} luminanceThreshold={0.18} luminanceSmoothing={0.18} mipmapBlur />
-          <ChromaticAberration blendFunction={BlendFunction.NORMAL} offset={[0.0006, 0.0009] as any} radialModulation modulationOffset={0.5} />
-          <Vignette eskil={false} offset={0.18} darkness={0.85} />
+          {/* v2: bloom dialed way back so it stops bleeding into UI typography. */}
+          {/* The cinematic feel comes from the imagery, palette, and CA + vignette. */}
+          <Bloom intensity={0.35} luminanceThreshold={0.55} luminanceSmoothing={0.25} mipmapBlur radius={0.7} />
+          <ChromaticAberration blendFunction={BlendFunction.NORMAL} offset={[0.0004, 0.0006] as any} radialModulation modulationOffset={0.5} />
+          <Vignette eskil={false} offset={0.22} darkness={0.92} />
         </EffectComposer>
       </Canvas>
     </div>
